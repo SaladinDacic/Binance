@@ -1,7 +1,7 @@
 {
-  "name": "@digital-boss/n8n-nodes-starter",
+  "name": "@digital-boss/n8n-nodes-sport-trade",
   "version": "0.1.0",
-  "description": "FriendGrid support for n8n.",
+  "description": "SportTrade support for n8n.",
   "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://n8n.io",
   "author": {
@@ -41,10 +41,10 @@
   ],
   "n8n": {
     "credentials": [
-      "dist/credentials/FriendGridApi.credentials.js"
+      "dist/credentials/SportTradeApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/FriendGrid/FriendGrid.node.js"
+      "dist/nodes/SportTrade/SportTrade.node.js"
     ]
   },
   "devDependencies": {
