@@ -2,7 +2,7 @@
 
 ![n8n.io - Workflow Automation](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png)
 
-Example starter module for custom n8n nodes. SportTrade API example from the n8n documentation is used for this purpose.
+Example starter module for custom n8n nodes. Binance API example from the n8n documentation is used for this purpose.
 This is a TEST node used as a template for node creation.
 
 ## Try it out with docker

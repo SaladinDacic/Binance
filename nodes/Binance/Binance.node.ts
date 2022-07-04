@@ -16,7 +16,7 @@ import {
 import {publicApiOperations} from "./descriptions";
 
 import {
-	sportTradeApiRequest,
+	binanceApiRequest,
 } from './GenericFunctions';
 
 import {
@@ -25,26 +25,26 @@ import {
 
 import { version } from '../version';
 
-export class SportTrade implements INodeType {
+export class Binance implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'SportTrade',
-		name: 'sportTrade',
-		icon: 'file:sportTrade.svg',
+		displayName: 'Binance',
+		name: 'binance',
+		icon: 'file:binance.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["method"]}}',
-		description: `Consume SportTrade API (v.${version})`,
+		description: `Consume Binance API (v.${version})`,
 		defaults: {
-				name: 'SportTrade',
+				name: 'Binance',
 				color: '#1A82e2',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
 		credentials: [
 			{
-				name: 'sportTradeApi',
+				name: 'binanceApi',
 				required: true,
-				testedBy: 'testSportTradeApiAuth',
+				testedBy: 'testBinanceApiAuth',
 			},
 		],
 		properties: [...publicApiOperations],
@@ -83,7 +83,7 @@ export class SportTrade implements INodeType {
 								// .........
 								let data: IDataObject = { symbol,timestamp };
 								Object.assign(data, additionalFields);
-								body[operation] = [ data ];
+								body[operation] = [ data ]; //don't have shape of the object, and not sure should I create params or send object
 								console.log("===========================================================")
 								console.log(body)
 							}
@@ -332,7 +332,7 @@ export class SportTrade implements INodeType {
 					}
 				}
 
-				responseData = await sportTradeApiRequest.call(this, method, endpoint, body, qs);
+				responseData = await binanceApiRequest.call(this, method, endpoint, body, qs);
 
 				if (Array.isArray(responseData)) {
 					returnData.push.apply(returnData, responseData as IDataObject[]);
@@ -354,7 +354,7 @@ export class SportTrade implements INodeType {
 
 	methods = {
 		credentialTest: {
-			async testSportTradeApiAuth(this: ICredentialTestFunctions, credential: ICredentialsDecrypted): Promise<INodeCredentialTestResult> {
+			async testBinanceApiAuth(this: ICredentialTestFunctions, credential: ICredentialsDecrypted): Promise<INodeCredentialTestResult> {
 
 				// https://docs.sendgrid.com/api-reference/users-api/retrieve-your-username
 				const options: OptionsWithUri = {

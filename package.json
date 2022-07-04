@@ -1,7 +1,7 @@
 {
-  "name": "@digital-boss/n8n-nodes-sport-trade",
+  "name": "@digital-boss/n8n-nodes-binance",
   "version": "0.1.0",
-  "description": "SportTrade support for n8n.",
+  "description": "Binance support for n8n.",
   "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "https://n8n.io",
   "author": {
@@ -41,10 +41,10 @@
   ],
   "n8n": {
     "credentials": [
-      "dist/credentials/SportTradeApi.credentials.js"
+      "dist/credentials/BinanceApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/SportTrade/SportTrade.node.js"
+      "dist/nodes/Binance/Binance.node.js"
     ]
   },
   "devDependencies": {
