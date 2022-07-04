@@ -65,6 +65,9 @@
   "dependencies": {
     "n8n-core": "~0.119.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
