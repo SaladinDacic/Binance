@@ -2,7 +2,7 @@
   "name": "@digital-boss/n8n-nodes-binance",
   "version": "0.1.0",
   "description": "Binance support for n8n.",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "Apache 2.0",
   "homepage": "https://n8n.io",
   "author": {
     "name": "Saladin Dacic",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digital-boss/n8n-nodes-starter.git"
+    "url": "git+https://github.com/SaladinDacic/Binance.git"
   },
   "keywords": [
     "n8n",
@@ -24,6 +24,7 @@
     "customer service"
   ],
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "dev": "npm run watch",
     "build": "genversion -s -e nodes/version.ts && git add . && tsc && gulp",
