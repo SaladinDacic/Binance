@@ -13,7 +13,6 @@ export const requiredFields = [
         default: '',
         displayOptions: {
             show: {
-                method : ['get','post','delete'],
                 operation: ['newOrder','cancelOrder','cancelAllOrders','queryOrder','cancelOrderSendNew','allOrders','newOco','cancelOCO','accTradeList'],
             },
         },
@@ -26,7 +25,6 @@ export const requiredFields = [
         default: '',
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['newOrder','cancelOrderSendNew','newOco'],
             },
         },
@@ -42,7 +40,6 @@ export const requiredFields = [
         default: 0.00,
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['newOco'],
             },
         },
@@ -58,7 +55,6 @@ export const requiredFields = [
         default: 0.00,
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['newOco'],
             },
         },
@@ -74,7 +70,6 @@ export const requiredFields = [
         default: 0.00,
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['newOco'],
             },
         },
@@ -87,7 +82,6 @@ export const requiredFields = [
         default: '',
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['newOrder','cancelOrderSendNew'],
             },
         },
@@ -100,7 +94,6 @@ export const requiredFields = [
         default: '',
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['cancelOrderSendNew'],
             },
         },
@@ -113,10 +106,9 @@ export const requiredFields = [
         displayName: 'Timestamp', //M
         name: 'timestamp',
         type: 'number',
-        default: 0,
+        default: Date.now(),
         displayOptions: {
             show: {
-                method : ['get','post','delete'],
                 operation: ['newOrder','cancelOrder','cancelAllOrders','queryOrder','cancelOrderSendNew','currentOpenOrders','allOrders','newOco','cancelOCO','queryOco','queryAllOco','queryOpenOco','accInfo','','queryCurrentOrderCount','accTradeList'],
             },
         },

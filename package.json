@@ -1,5 +1,5 @@
 {
-  "name": "@digital-boss/n8n-nodes-binance",
+  "name": "n8n-nodes-binance",
   "version": "0.1.0",
   "description": "Binance support for n8n.",
   "license": "Apache 2.0",

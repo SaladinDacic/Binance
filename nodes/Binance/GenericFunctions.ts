@@ -31,6 +31,8 @@ export async function binanceApiRequest(this: IHookFunctions | IExecuteFunctions
 		headers: {
 			'Accept': 'application/json',
 			'Authorization': `Bearer ${credentials.apiKey}`,
+			'apiKey': `${credentials.apiKey}`,
+			'secretKey': `${credentials.apiSecret}`,
 		},
 		qs,
 		body,

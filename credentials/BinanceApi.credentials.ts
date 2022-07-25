@@ -15,6 +15,14 @@ export class BinanceApi implements ICredentialType {
 			displayName: 'API Key',
 			name: 'apiKey',
 			type: 'string',
+			required : true,
+			default: '',
+		},
+		{
+			displayName: 'API Secret',
+			name: 'apiSecret',
+			type: 'string',
+			required: true,
 			default: '',
 		},
 	];

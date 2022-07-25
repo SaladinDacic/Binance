@@ -18,7 +18,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['newOrder'],
             },
         },
@@ -130,7 +129,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['delete'],
                 operation: ['cancelOrder'],
             },
         },
@@ -182,7 +180,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['delete'],
                 operation: ['cancelAllOrders'],
             },
         },
@@ -212,7 +209,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['queryOrder'],
             },
         },
@@ -256,7 +252,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['cancelOrderSendNew'],
             },
         },
@@ -394,7 +389,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['currentOpenOrders'],
             },
         },
@@ -431,7 +425,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['allOrders'],
             },
         },
@@ -490,7 +483,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['post'],
                 operation: ['newOco'],
             },
         },
@@ -598,7 +590,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['delete'],
                 operation: ['cancelOCO'],
             },
         },
@@ -652,7 +643,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['queryOco'],
             },
         },
@@ -698,7 +688,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['queryAllOco'],
             },
         },
@@ -758,7 +747,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['queryOpenOco'],
             },
         },
@@ -788,7 +776,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['accInfo'],
             },
         },
@@ -818,7 +805,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['accTradeList'],
             },
         },
@@ -886,7 +872,6 @@ export const optionalFields = [
 		},
         displayOptions: {
             show: {
-                method : ['get'],
                 operation: ['queryCurrentOrderCount'],
             },
         },
