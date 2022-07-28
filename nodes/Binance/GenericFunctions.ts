@@ -29,14 +29,14 @@ export async function binanceApiRequest(this: IHookFunctions | IExecuteFunctions
 	const options: OptionsWithUri = {
 		method,
 		headers: {
-			'Accept': 'application/json',
-			'Authorization': `Bearer ${credentials.apiKey}`,
-			'apiKey': `${credentials.apiKey}`,
-			'secretKey': `${credentials.apiSecret}`,
+			Accept: "application/json",
+			Authorization: `Bearer ${credentials.apiKey}`,
+			apiKey: `${credentials.apiKey}`,
+			secretKey: `${credentials.apiSecret}`,
 		},
 		qs,
 		body,
-		uri: uri || `https://api.sendgrid.com/v3/${endpoint}`,
+		uri: uri || `https://api.binance.com/${endpoint}`,
 		json: true,
 	};
 

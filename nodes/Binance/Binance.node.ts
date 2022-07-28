@@ -445,7 +445,7 @@ export class Binance implements INodeType {
 						apiKey: `${credential!.data!.apiKey}`,
 						secretKey: `${credential!.data!.apiSecret}`,
 					},
-					uri: "https://api.sendgrid.com/v1/order",
+					uri: "https://api.binance.com/order",
 					json: true,
 				};
 
